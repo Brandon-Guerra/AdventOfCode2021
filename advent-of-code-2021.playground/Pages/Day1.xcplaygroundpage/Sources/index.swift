@@ -12,13 +12,9 @@ public func part1(_ sonarDepths: [Int]) -> Int {
 // part 2
 public func part2(_ sonarDepths: [Int]) -> Int {
     var depthWindowIncreases = 0
-    for index in 2...sonarDepths.count - 1 {
-        if (index + 1 <= sonarDepths.count - 1) {
-            let firstWindowSum = Int(sonarDepths[index - 2]) + Int(sonarDepths[index - 1]) + Int(sonarDepths[index])
-            let secondWindowSum = Int(sonarDepths[index + 1]) + Int(sonarDepths[index]) + Int(sonarDepths[index - 1])
-            if (firstWindowSum < secondWindowSum) {
-                depthWindowIncreases += 1
-            }
+    for index in 3...sonarDepths.count - 1 {
+        if (Int(sonarDepths[index - 3]) < Int(sonarDepths[index])) {
+            depthWindowIncreases += 1
         }
     }
     return depthWindowIncreases
