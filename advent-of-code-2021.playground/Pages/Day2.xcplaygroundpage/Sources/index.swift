@@ -29,7 +29,7 @@ public func part1(_ commands: [String]) -> Int {
     return horizontalPosition * depth
 }
 
-//part2
+// part2
 public func part2(_ commands: [String]) -> Int {
     var horizontalPosition = 0
     var depth = 0
