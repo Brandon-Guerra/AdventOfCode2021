@@ -1003,23 +1003,5 @@ forward 7
 
 let directions = directionsInput.components(separatedBy: "\n").map { $0 }
 
-//for direction in directions {
-//    let components = direction.components(separatedBy: " ")
-//    let dir = components[0]
-//    let magnitude = Int(components[1])!
-//
-//    switch dir {
-//    case "up":
-//        aim -= magnitude
-//    case "down":
-//        aim += magnitude
-//    case "forward":
-//        horizontalPosition += magnitude
-//        depth += (magnitude * aim)
-//    default:
-//        break
-//    }
-//}
-
 solve(partNumber: 1, input: directions, function: part1)
 solve(partNumber: 2, input: directions, function: part2)
