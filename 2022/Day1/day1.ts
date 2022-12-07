@@ -2255,9 +2255,9 @@ const input = `6758
 4254`;
 
 const elves = input.split("\n\n");
-const calories = elves.map(elf => elf.split("\n"));
+const calories = elves.map((elf) => elf.split("\n"));
 const totals = calories.map((set) => {
-    return set.reduce((acc, curr) => acc + Number(curr), 0);
+  return set.reduce((acc, curr) => acc + Number(curr), 0);
 });
 
 const max = Math.max(...totals);
