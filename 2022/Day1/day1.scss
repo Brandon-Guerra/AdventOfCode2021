@@ -1,0 +1,28 @@
+body {
+    padding: 1rem;
+}
+
+section {
+    border: 20px solid slateblue;
+    width: fit-content;
+}
+
+section+section {
+    margin-top: 1.5rem;
+}
+
+div {
+    display: flex;
+}
+
+div>p {
+    background: lightsalmon;
+    display: inline-block;
+    margin: 0;
+    width: calc(1px * var(--calories));
+}
+
+.example div>p {
+    height: 8px;
+    width: calc(0.005px * var(--calories));
+}
